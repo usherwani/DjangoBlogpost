@@ -1,5 +1,6 @@
+/* Page Header */
 .page-header {
-    background-color: #C25100;
+    background-color: #f0ffff;
     margin-top: 20px;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
@@ -9,11 +10,12 @@
 .page-header h1 a,
 .page-header h1 a:visited,
 .page-header h1 a:active {
-    color: #ffffff;
+    color: #333;
     font-size: 36pt;
     text-decoration: none;
 }
 
+/* Heading Styles */
 h1,
 h2,
 h3,
@@ -21,48 +23,43 @@ h4 {
     font-family: 'Lobster', cursive;
 }
 
+/* Date Style */
 .date {
     color: #828282;
+    font-size: 12px; /* Smaller size for date */
 }
 
-.save {
-    float: right;
-}
-
-.post-form textarea,
-.post-form input {
-    width: 100%;
-}
-
-.top-menu,
-.top-menu:hover,
-.top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
+/* Post Block Styling */
 .post {
     margin-bottom: 50px; /* Margin between posts */
-    border: 2px solid #C25100; /* Border color */
+    border: 2px solid #dcdcdc; /* Grey border around each post */
     padding: 20px; /* Padding inside the post */
-    border-radius: 10px; /* Rounded corners */
-    background-color: #f2f2f2; /* Light grey background */
+    border-radius: 10px; /* Rounded corners for block look */
+    background-color: #ffffff; /* White background for each post */
     color: #333; /* Dark grey text for readability */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
+/* Heading inside the Post */
+.post h2 {
+    color: #000000; /* Black color for heading */
+    border-bottom: 2px solid #dcdcdc; /* Grey border under the heading */
+    padding-bottom: 10px; /* Spacing between heading and content */
+    margin-bottom: 15px; /* Margin below heading */
+}
+
+/* Link inside the Post */
 .post h2 a,
 .post h2 a:visited {
-    color: #C25100; /* Matching link color with the border */
-    text-decoration: none;
+    color: #000000; /* Black color for post title links */
+    text-decoration: none; /* No underline */
 }
 
 .post h2 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
+/* Floating Actions and Date */
 .post > .date,
 .post > .actions {
     float: right;
@@ -71,6 +68,7 @@ h4 {
     margin-bottom: 15px;
 }
 
+/* Button Styling */
 .btn-secondary,
 .btn-secondary:visited {
     color: #C25100;
