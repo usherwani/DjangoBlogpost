@@ -1,6 +1,6 @@
 .page-header {
     background-color: #C25100;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
 }
@@ -44,17 +44,31 @@ h4 {
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-bottom: 50px; /* Margin between posts */
+    border: 2px solid #C25100; /* Border color */
+    padding: 20px; /* Padding inside the post */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #f2f2f2; /* Light grey background */
+    color: #333; /* Dark grey text for readability */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
 }
 
 .post h2 a,
 .post h2 a:visited {
-    color: #000000;
+    color: #C25100; /* Matching link color with the border */
+    text-decoration: none;
+}
+
+.post h2 a:hover {
+    text-decoration: underline;
 }
 
 .post > .date,
 .post > .actions {
     float: right;
+    font-style: italic;
+    color: #999; /* Slightly gray color for date */
+    margin-bottom: 15px;
 }
 
 .btn-secondary,
@@ -66,5 +80,5 @@ h4 {
 
 .btn-secondary:hover {
     color: #FFFFFF;
-    background-color: #C25100;
+    background-color: #f0f8ff;
 }
